@@ -15,3 +15,5 @@ ATDF is a conservative based autotrader utilizing api from Danelfin and webull t
 11. user can set a followup trailing % stoploss, so as it gains, the stoploss can move with the gain. 
 12. system will monitor Danelfin for new possible trades and if within parameters set , auto initiate the trade on webull sending a SMS or notice to screen
 13. SMS messages will be sent on both init of a trade and closing of a trade, each day a summary of actions and current status will be emailed to user
+14. allow partial purchase of stock
+
