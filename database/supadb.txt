@@ -1,0 +1,9 @@
+import { createClient } from '@supabase/supabase-js';
+
+const supabase = createClient('https://kkwjrhrcjtazzvahrorw.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtrd2pyaHJjanRhenp2YWhyb3J3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc3MTU2MTgsImV4cCI6MjA3MzI5MTYxOH0.F6wweg4n1MpThDtJ2U7Kkrnw0Pmyn3PP9O4zmyuGnBs');
+
+// Example: Fetch data from a table
+const { data, error } = await supabase
+  .from('your_table')
+  .select('*');
+  

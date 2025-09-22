@@ -1,0 +1,17 @@
+ATDF is a conservative based autotrader utilizing api from Danelfin and webull this is how it works:
+
+
+
+1. user will register with profile intformation, entry of email address, phone, and password.
+2. user will enter credetials for stripe payment for monthly usage
+3) user will enter credentials for danelfin api
+4  user will enter credentials for webull api account
+5. user will enter criteria for trading, cash amount to manage, percentage to risk, take percentage and alert percentage for both possible loss or gain. 
+6. user will dermine max trade amount to risk per trade
+7. user will determine paper or live trading
+8. at startup, a graph showing baseline amount start, and secondary line of gain  with percentage of gain listed.
+9. a listing of each trade will show current position, number of shares, gain/loss %, and dollar amount of gain and total, entry max % to sell.
+10. once trade is accepted, use 1/5 of the % possible gain as default sell price. if user sets that to zero , then sell price will be Danelfin projected gain.
+11. user can set a followup trailing % stoploss, so as it gains, the stoploss can move with the gain. 
+12. system will monitor Danelfin for new possible trades and if within parameters set , auto initiate the trade on webull sending a SMS or notice to screen
+13. SMS messages will be sent on both init of a trade and closing of a trade, each day a summary of actions and current status will be emailed to user
