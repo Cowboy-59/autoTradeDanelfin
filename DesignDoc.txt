@@ -2,18 +2,23 @@ ATDF is a conservative based autotrader utilizing api from Danelfin and webull t
 
 
 
-1. user will register with profile intformation, entry of email address, phone, and password.
-2. user will enter credetials for stripe payment for monthly usage
-3) user will enter credentials for danelfin api
-4  user will enter credentials for webull api account
-5. user will enter criteria for trading, cash amount to manage, percentage to risk, take percentage and alert percentage for both possible loss or gain. 
-6. user will dermine max trade amount to risk per trade
-7. user will determine paper or live trading
-8. at startup, a graph showing baseline amount start, and secondary line of gain  with percentage of gain listed.
-9. a listing of each trade will show current position, number of shares, gain/loss %, and dollar amount of gain and total, entry max % to sell.
-10. once trade is accepted, use 1/5 of the % possible gain as default sell price. if user sets that to zero , then sell price will be Danelfin projected gain.
-11. user can set a followup trailing % stoploss, so as it gains, the stoploss can move with the gain. 
-12. system will monitor Danelfin for new possible trades and if within parameters set , auto initiate the trade on webull sending a SMS or notice to screen
-13. SMS messages will be sent on both init of a trade and closing of a trade, each day a summary of actions and current status will be emailed to user
-14. allow partial purchase of stock
-xxx
+1. user will register with profile intformation, entry of email address, phone, and password., profile will have flag field for stripe and Admin flag for managing all information for all users. 
+2. Profile passwords will be hashed, with ablity to use SSO for all standard SSO methods.
+3. admin@wxperts.com is master user, with access to all profiles and information for management, admin can grant access to other users to allow them to be managers.
+4. user will enter credetials for stripe payment for monthly usage
+5) user will enter credentials for danelfin api
+6  user will enter credentials for webull api account
+7. user will enter criteria for trading, cash amount to manage, percentage to risk, take percentage and alert percentage for both possible loss or gain. 
+8. user will dermine max trade amount to risk per trade
+9. user will determine paper or live trading,paper trading will be internal to app by referencing current daily gain/loss from webull api 
+10. at startup, a graph showing baseline amount start, and secondary line of gain  with percentage of gain listed.
+11. a listing of each trade will show current position, number of shares, gain/loss %, and dollar amount of gain and total, entry max % to sell.
+12. once trade is accepted, use 1/5 of the % possible gain as default sell price. if user sets that to zero , then sell price will be Danelfin projected gain.
+13. user can set a followup trailing % stoploss, so as it gains, the stoploss can move with the gain. 
+14. system will monitor Danelfin for new possible trades and if within parameters set , auto initiate the trade on webull sending a SMS or notice to screen
+15. SMS messages will be sent on both init of a trade and closing of a trade, each day a summary of actions and current status will be emailed to user
+16. allow partial purchase of stock 
+17. Create a MCP for Webull and Danelfin api
+
+
+
